@@ -8,9 +8,9 @@ Define the data layer that sits between product systems, analytics, and AI workl
 
 ## Role in the ecosystem
 
-- Shared substrate for `synapse` and `streaming-analytics-engine`
+- Shared substrate for `synapse` and `pulse`
 - Downstream dependency of `orbit`
-- Complement to `saas-platform`
+- Complement to `summit`
 
 ## Status
 
@@ -47,7 +47,7 @@ python3 -m src.data_platform.pipeline
 ## Related repositories
 
 - `synapse`
-- `streaming-analytics-engine`
+- `pulse`
 - `orbit`
 
 ## Future direction

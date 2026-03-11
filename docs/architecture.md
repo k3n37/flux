@@ -10,5 +10,5 @@
 ## First downstream consumers
 
 - `synapse`
-- `streaming-analytics-engine`
+- `pulse`
 - `orbit`
