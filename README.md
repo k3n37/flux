@@ -1,4 +1,4 @@
-# data-platform
+# flux
 
 Starter repository for data models, pipeline boundaries, and platform-oriented data flows.
 
@@ -8,8 +8,8 @@ Define the data layer that sits between product systems, analytics, and AI workl
 
 ## Role in the ecosystem
 
-- Shared substrate for `ai-platform` and `streaming-analytics-engine`
-- Downstream dependency of `master-platform`
+- Shared substrate for `synapse` and `streaming-analytics-engine`
+- Downstream dependency of `orbit`
 - Complement to `saas-platform`
 
 ## Status
@@ -25,7 +25,7 @@ Starter repository with pipeline contracts and architecture notes.
 ## Structure
 
 ```text
-data-platform/
+flux/
 ├── docs/
 │   └── architecture.md
 ├── src/
@@ -46,9 +46,9 @@ python3 -m src.data_platform.pipeline
 
 ## Related repositories
 
-- `ai-platform`
+- `synapse`
 - `streaming-analytics-engine`
-- `master-platform`
+- `orbit`
 
 ## Future direction
 

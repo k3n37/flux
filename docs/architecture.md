@@ -9,6 +9,6 @@
 
 ## First downstream consumers
 
-- `ai-platform`
+- `synapse`
 - `streaming-analytics-engine`
-- `master-platform`
+- `orbit`
