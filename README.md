@@ -1,55 +1,34 @@
 # flux
 
-Starter repository for data models, pipeline boundaries, and platform-oriented data flows.
-
 ## Purpose
+Handle data flow, transformation, and pipeline boundaries between product systems, analytics, and AI workloads.
 
-Define the data layer that sits between product systems, analytics, and AI workloads.
+## Why it matters
+When data movement is vague, integrations become brittle, downstream systems drift, and model inputs lose trust quickly.
 
-## Role in the ecosystem
+## Scope
+This repo focuses on pipeline design, transformation boundaries, and platform-oriented data flow. It does not try to be a full warehouse or analytics stack.
 
-- Shared substrate for `synapse` and `pulse`
-- Downstream dependency of `orbit`
-- Complement to `summit`
+## System Role
+`flux` is the data-engineering layer for the ecosystem. It moves structured information between operational systems, knowledge systems, and analysis paths.
 
-## Status
+## System Connections
+- Depends on: upstream product events and persistence models from `vault` and `summit`.
+- Feeds into: `synapse`, `pulse`.
+- Interacts with: `forge`, `vault`, `orbit`.
 
-Starter repository with pipeline contracts and architecture notes.
+## Core Concepts
+- data contracts
+- pipeline stages
+- transformation logic
+- event movement
+- downstream readiness
 
-## Tech stack
+## Minimal Artifact
+`src/data_platform/pipeline.py` and `docs/architecture.md` provide the starter pipeline flow and boundary note.
 
-- Python
-- Standard library dataclasses
-- Markdown
+## Notes
+The focus is on clear movement and shape of data, not on pretending a full data platform already exists.
 
-## Structure
-
-```text
-flux/
-├── docs/
-│   └── architecture.md
-├── src/
-│   └── data_platform/
-│       ├── __init__.py
-│       └── pipeline.py
-├── .editorconfig
-├── .gitignore
-├── README.md
-└── ROADMAP.md
-```
-
-## Getting started
-
-```bash
-python3 -m src.data_platform.pipeline
-```
-
-## Related repositories
-
-- `synapse`
-- `pulse`
-- `orbit`
-
-## Future direction
-
-Add schema contracts, warehousing sync notes, and pipeline testing without turning the repo into a data dump.
+## Next Steps
+Add schema evolution notes, ingestion variants, and testable pipeline contracts.
